@@ -2,11 +2,6 @@
 
 A modern, accessible React component library built with TypeScript, Tailwind CSS, and Storybook. This project showcases two main components: **InputField** and **DataTable**, designed for real-world applications.
 
-## 🚀 Live Demo
-
-- **Main Application**: [View Live Demo](https://lovable.dev/projects/6e218af5-cc4d-4308-bd54-d080fa2aed2e)
-- **Component Demo**: Navigate to `/demo` to see interactive examples
-- **Storybook**: Run `npm run storybook` for detailed component documentation
 
 ## 📦 Components
 
@@ -168,14 +163,6 @@ Each component includes:
 - **Accessibility considerations**
 - **Usage examples** and best practices
 
-## 🧪 Testing
-
-The project includes basic testing setup. Components are designed with testability in mind:
-
-- Semantic HTML structure
-- Proper ARIA labels
-- Predictable state management
-- Clear component interfaces
 
 ## 🚢 Deployment
 
@@ -231,6 +218,3 @@ The demo page (`/demo`) showcases:
 
 This project is created for educational/assignment purposes.
 
----
-
-**Built with ❤️ using React, TypeScript, and Tailwind CSS**
