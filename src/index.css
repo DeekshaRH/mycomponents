@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Component Library Design System - All colors MUST be HSL */
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --background: 0 0% 100%;
+    --foreground: 220 26% 14%;
+    
+    /* Surface Colors */
+    --surface: 0 0% 98%;
+    --surface-variant: 220 14% 96%;
+    --on-surface: 220 26% 14%;
+    --on-surface-variant: 220 9% 46%;
+    
+    /* Primary Brand Colors */
+    --primary: 217 91% 60%;
+    --primary-hover: 217 91% 55%; 
+    --primary-active: 217 91% 50%;
+    --on-primary: 0 0% 100%;
+    
+    /* Secondary Colors */
+    --secondary: 220 14% 96%;
+    --secondary-hover: 220 14% 93%;
+    --secondary-active: 220 14% 88%;
+    --on-secondary: 220 26% 14%;
+    
+    /* State Colors */
+    --success: 142 76% 36%;
+    --success-light: 142 76% 92%;
+    --warning: 38 92% 50%;
+    --warning-light: 48 100% 95%;
+    --error: 0 84% 60%;
+    --error-light: 0 93% 94%;
+    --info: 217 91% 60%;
+    --info-light: 217 91% 95%;
+    
+    /* Border & Input */
+    --border: 220 13% 91%;
+    --border-hover: 220 13% 85%;
+    --border-focus: 217 91% 60%;
+    --input-bg: 0 0% 100%;
+    --input-disabled: 220 14% 96%;
+    
+    /* Focus Ring */
+    --ring: 217 91% 60%;
+    --ring-offset: 0 0% 100%;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+    --shadow: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+    
+    /* Component Specific */
+    --table-header: 220 14% 98%;
+    --table-row-hover: 220 14% 99%;
+    --table-border: 220 13% 93%;
+    
+    /* Typography */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 0.75rem;
+    --spacing-lg: 1rem;
+    --spacing-xl: 1.5rem;
+    
+    /* Border Radius */
+    --radius-sm: 0.25rem;
+    --radius: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Core Colors */
+    --background: 220 26% 6%;
+    --foreground: 0 0% 98%;
+    
+    /* Surface Colors */
+    --surface: 220 26% 8%;
+    --surface-variant: 220 22% 12%;
+    --on-surface: 0 0% 98%;
+    --on-surface-variant: 220 9% 65%;
+    
+    /* Primary Brand Colors */
+    --primary: 217 91% 65%;
+    --primary-hover: 217 91% 70%;
+    --primary-active: 217 91% 75%;
+    --on-primary: 220 26% 6%;
+    
+    /* Secondary Colors */
+    --secondary: 220 22% 12%;
+    --secondary-hover: 220 22% 15%;
+    --secondary-active: 220 22% 18%;
+    --on-secondary: 0 0% 98%;
+    
+    /* State Colors */
+    --success: 142 76% 45%;
+    --success-light: 142 76% 8%;
+    --warning: 38 92% 60%;
+    --warning-light: 48 100% 8%;
+    --error: 0 84% 70%;
+    --error-light: 0 93% 8%;
+    --info: 217 91% 65%;
+    --info-light: 217 91% 8%;
+    
+    /* Border & Input */
+    --border: 220 22% 18%;
+    --border-hover: 220 22% 25%;
+    --border-focus: 217 91% 65%;
+    --input-bg: 220 26% 8%;
+    --input-disabled: 220 22% 12%;
+    
+    /* Focus Ring */
+    --ring: 217 91% 65%;
+    --ring-offset: 220 26% 6%;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.2);
+    --shadow: 0 1px 3px 0 hsl(0 0% 0% / 0.3), 0 1px 2px -1px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.3), 0 2px 4px -2px hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.3), 0 4px 6px -4px hsl(0 0% 0% / 0.3);
+    
+    /* Component Specific */
+    --table-header: 220 22% 10%;
+    --table-row-hover: 220 22% 8%;
+    --table-border: 220 22% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Focus styles */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-ring-offset;
+  }
+}
+
+@layer components {
+  /* Component Library Base Styles */
+  .component-focus {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  
+  .component-hover {
+    @apply transition-colors duration-200 ease-in-out;
+  }
+  
+  .component-disabled {
+    @apply opacity-50 cursor-not-allowed pointer-events-none;
+  }
+  
+  /* Input Component Variants */
+  .input-base {
+    @apply component-focus border border-border bg-input-bg text-on-surface placeholder:text-on-surface-variant;
+  }
+  
+  .input-filled {
+    @apply input-base bg-surface-variant border-transparent;
+  }
+  
+  .input-outlined {
+    @apply input-base bg-input-bg border-border hover:border-border-hover focus:border-border-focus;
+  }
+  
+  .input-ghost {
+    @apply input-base bg-transparent border-transparent hover:bg-surface-variant focus:bg-surface-variant;
+  }
+  
+  .input-invalid {
+    @apply border-error bg-error-light focus:border-error;
+  }
+  
+  /* Table Component Styles */
+  .table-base {
+    @apply w-full border-collapse border-spacing-0;
+  }
+  
+  .table-header {
+    @apply bg-table-header border-b border-table-border;
+  }
+  
+  .table-row {
+    @apply border-b border-table-border hover:bg-table-row-hover component-hover;
+  }
+  
+  .table-cell {
+    @apply px-spacing-lg py-spacing-md text-left;
+  }
+}
