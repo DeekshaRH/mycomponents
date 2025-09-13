@@ -144,7 +144,7 @@ src/
 - ✅ Selection summary
 - ✅ Three sizes (sm, md, lg)
 
-**##Description of Approach**
+##Description of Approach
 
 - Component-driven development using React + TypeScript
 
