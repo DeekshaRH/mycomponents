@@ -144,25 +144,17 @@ src/
 - ✅ Selection summary
 - ✅ Three sizes (sm, md, lg)
 
-## 🎨 Design Philosophy
+**##Description of Approach**
 
-This component library follows modern design principles:
+- Component-driven development using React + TypeScript
 
-- **Consistency**: Unified design tokens across all components
-- **Accessibility**: WCAG compliant with proper ARIA labels
-- **Performance**: Optimized for minimal re-renders
-- **Flexibility**: Highly customizable without breaking core functionality
-- **Developer Experience**: Full TypeScript support with comprehensive interfaces
+- Storybook-first workflow for isolated development and testing
 
-## 📖 Component Documentation
+- TailwindCSS design system for consistent styling
 
-Each component includes:
+- Accessibility focus with ARIA labels and keyboard interactions
 
-- **TypeScript interfaces** with detailed prop descriptions
-- **Storybook stories** with interactive examples
-- **Accessibility considerations**
-- **Usage examples** and best practices
-
+- Scalable structure for easy extension with new components
 
 ## 🚢 Deployment
 
@@ -181,38 +173,7 @@ Deploy the built Storybook to services like:
 - [Vercel](https://vercel.com)
 - [Netlify](https://netlify.com)
 
-## 🤝 Contributing
 
-This is an assignment project, but the structure supports easy extension:
-
-1. Follow the existing component structure
-2. Add TypeScript interfaces
-3. Include Storybook stories
-4. Use the established design system
-5. Maintain accessibility standards
-
-## 📝 Assignment Requirements
-
-This project fulfills all assignment requirements:
-
-- ✅ **InputField Component** with all specified features
-- ✅ **DataTable Component** with sorting and selection
-- ✅ **TypeScript** with proper interfaces
-- ✅ **Responsive Design** for all components
-- ✅ **Accessibility** with ARIA labels
-- ✅ **Modern Styling** with Tailwind CSS
-- ✅ **Storybook Documentation** with interactive examples
-- ✅ **Clean Architecture** with scalable structure
-
-## 🎉 Demo Features
-
-The demo page (`/demo`) showcases:
-
-- All InputField variants and states
-- Interactive DataTable with real data
-- Form validation examples
-- Responsive design across devices
-- Dark/light theme compatibility
 
 ## 📄 License
 
